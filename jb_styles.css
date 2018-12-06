@@ -21,7 +21,8 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12pt;
 }
-/* Detailed styles */
+/* Structural styles */
+
 body {
     background: rgb(134, 176, 232);
     box-shadow: white 5px 0px 15px,
@@ -32,7 +33,7 @@ body {
     max-width: 1024px;
     width: 100%;
 }
-
+/* Nav Styles */
 nav {
     overflow: hidden;
 }
@@ -45,27 +46,34 @@ nav ul#hor li a {
     background-color: orange;
     color: white;
 }
-
+/* aside code */
 aside {
-    border: 3px solid black;
+    border: 3px solid lightblue;
     display: table;
     margin-top: 10px;
     float: left;
     width: 20%;
+    background: orange;
+    margin-left: 10px;
 }
 
 aside li {
     text-align: center;
 }
+/* try to fix looks */
 .try {
     width: 75%;
 }
-
 h1 {
-    margin-left: 30px;
+    display: inline-block;
 }
-article p {
+h1 {
+    content: "";
+    display: table;
+    margin: auto;  
+}
 
+article p {
     content: "";
     display: table;
     margin: auto;
@@ -79,8 +87,116 @@ header img {
     margin-right: auto;
 }
 
-/* footer {
+
+
+/* article styles */
+p.try {
+    padding: 10px;
+}
+#bot {
+    width: 65%;
+    margin-right: 100px;
+}
+.disc {
+    list-style-type: disc;
+}
+blockquote {
+    display: inline-block;
+    align-content: center;
+    text-align: left;
+    border: 3px solid black;
+    padding: 10px;
+    background: grey;
+}
+
+blockquote {
+    content: "";
+    display: table;
+    margin: auto;
+}
+
+blockquote a:link {
+    text-decoration: none;
+    color: rgb(134, 176, 232);
+}
+
+aside {
+    align-content: center;
+}
+
+aside a:link, aside a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: white;
+}
+ol#fix {
+    margin-left: 90px;
+}
+li.set {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+section img {
+    position: absolute;
+}
+h2 {
+    display: block;
+    margin-left: 190px;
+}
+
+article li {
+    list-style-type: disc;
+    margin: 0px auto;
+    width: 75%;
+}
+footer {
     width: 100%;
     color: black;
     background-color: whitesmoke;
-} */
+}
+
+/* size styles */
+/* Styles for phones */
+@media only screen and (max-width: 481px) {
+    aside {
+        order: 99;
+        -webkit-order: 99;
+        width: 50%;
+        align-content: center;
+    }
+    blockquote {
+        width: 50%;
+        line-height: 2em;
+    }
+    h1 {
+        display: block;
+        text-align: center;
+        margin-top: 240px;
+    }
+    p#bot{
+        margin: 0px auto;
+        width: 75%;
+    }
+    .set {
+        line-height: 2em;
+    }
+    nav ul#hor li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+/* style for tablet */
+@media only screen and (min-width: 481px) {
+
+}
+/* Style for desktop */
+@media only screen and (max-width: 769px) {
+
+}

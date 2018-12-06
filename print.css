@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Jose Felix
+   Date:     11.30.18
+   
+   Filename: print.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+/* structural styles */
+html {
+    background: url(backbeach.jpeg) center center / cover fixed;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+nav {
+    display: none;
+}
+aside {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    padding: 10px;
+}
+h2 {
+    padding: 10px;
+}
