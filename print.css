@@ -20,6 +20,7 @@ html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
 }
+/* I take some things away because you don't need links when you print a website out. */
 nav {
     display: none;
 }
@@ -30,6 +31,7 @@ aside {
 a {
     text-decoration: none;
 }
+/* This made the Headers look cleaner */
 h1 {
     padding: 10px;
 }

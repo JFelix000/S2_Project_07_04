@@ -37,6 +37,7 @@ body {
 nav {
     overflow: hidden;
 }
+/* These are the styles it took to make the horizontal nav look that way, I changed the width to that percentage because it is the number of links/100 for it to share the screen appropriately */
 nav ul#hor li a {
     float: left;
     text-align: center;
@@ -47,6 +48,7 @@ nav ul#hor li a {
     color: white;
 }
 /* aside code */
+/* I needed to make the aside look different than the rest of the p element for looks, and it has links, so I made it have a border with a width of 3px solid line and a margin so it isn't all over the nav */
 aside {
     border: 3px solid lightblue;
     display: table;
@@ -61,18 +63,20 @@ aside li {
     text-align: center;
 }
 /* try to fix looks */
+/* Even though it is industry practice to have the element along with the class or id. you don't necessarily have to, you may save time by leaving that out. */
 .try {
     width: 75%;
 }
 h1 {
     display: inline-block;
 }
+/* This is to fix container collapse issues and make the page render the way you may want it to */
 h1 {
     content: "";
     display: table;
     margin: auto;  
 }
-
+/* another container collapse fix, the code is the same for every time */
 article p {
     content: "";
     display: table;
@@ -86,7 +90,10 @@ header img {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* This is so that I can change the way my nav is seen as it is hovered, it is very boring to see it without a opacity change, so I made that change for desktop, when the mouse hovers over that. */
+nav ul#hor li a:hover {
+    opacity: .3;
+}
 
 
 /* article styles */
@@ -100,6 +107,7 @@ p.try {
 .disc {
     list-style-type: disc;
 }
+/* this is so that I could make the blockquote centered and below everything in the paper. I have text align-left so that all of the finger emotes can be on the side and look in order. */
 blockquote {
     display: inline-block;
     align-content: center;
@@ -109,15 +117,16 @@ blockquote {
     background: grey;
 }
 
-blockquote {
+blockquote{
     content: "";
     display: table;
     margin: auto;
 }
-
-blockquote a:link {
+/* I made the blockquotes look different once the page is refreshed and also for when it is visited so it looks the same both times. */
+blockquote a:link, blockquote a:visited {
     text-decoration: none;
     color: rgb(134, 176, 232);
+
 }
 
 aside {
@@ -128,11 +137,12 @@ aside a:link, aside a:visited {
     text-decoration: none;
     color: black;
 }
-
+/* This is to make the aside links look different from when they are hovered vs idle. This is good to make it look better in general and makes the site more pleasurable */
 aside a:hover {
     text-decoration: underline;
     color: white;
 }
+/* This is to make those OL's look right along the page, before this they were touching the left side of the body and ran that side. It was bad. */
 ol#fix {
     margin-left: 90px;
 }
@@ -148,7 +158,7 @@ h2 {
     display: block;
     margin-left: 190px;
 }
-
+/* This affects the li's in my article and those are the ones at the bottom. Here I ccan make disc appear so it looks like it is in some sort of order and list. Since the reset took these styles off, I had to make it look like that myself. I also found out that 75% width would around match the rest of my p elements */
 article li {
     list-style-type: disc;
     margin: 0px auto;
@@ -158,10 +168,12 @@ footer {
     width: 100%;
     color: black;
     background-color: whitesmoke;
+    text-align: center;
 }
 
 /* size styles */
 /* Styles for phones */
+/* THese are the styles just for phones and it is said in the selector that it needs a max-width of 481px and those are the bounds that I happened to give it, so it being those bouunds is the only thing that makes it actually be for phones only */
 @media only screen and (max-width: 481px) {
     aside {
         order: 99;
@@ -182,6 +194,7 @@ footer {
         margin: 0px auto;
         width: 75%;
     }
+    /* Changing the line height for phones makes it easier to read and navigate in my opinion so I added that */
     .set {
         line-height: 2em;
     }
@@ -193,6 +206,7 @@ footer {
 }
 
 /* style for tablet */
+/* felt there was no need, or ran out of time... */
 @media only screen and (min-width: 481px) {
 
 }
